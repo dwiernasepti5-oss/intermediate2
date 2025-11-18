@@ -1,0 +1,32 @@
+{
+  "name": "MStory",
+  "short_name": "MStory",
+  "id": "/intermediate_submission_2/",
+  "start_url": "/intermediate_submission_2/",
+  "scope": "/intermediate_submission_2/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#f58fb5",
+  "description": "Aplikasi MStory — berbagi cerita dan lokasi dengan dukungan PWA & Push Notification.",
+  "icons": [
+    {
+      "src": "./images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "./images/screenshot-wide.png",
+      "sizes": "1916x942",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "./images/screenshot-mobile.png",
+      "sizes": "1918x936",
+      "type": "image/png"
+    }
+  ]
+}
