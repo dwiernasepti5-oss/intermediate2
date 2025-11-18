@@ -16,7 +16,7 @@ export async function registerServiceWorkerAndSetupPush() {
   if (!('serviceWorker' in navigator)) return;
 
   try {
-    const base = import.meta.env.BASE_URL || './';
+    const base = import.meta.env.BASE_URL || '/';
     const swPath = `${base}sw.js`;
 
     const reg = await navigator.serviceWorker.register(swPath);
