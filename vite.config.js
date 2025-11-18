@@ -4,7 +4,7 @@ import { resolve } from 'path';
 export default defineConfig({
   root: '.', 
   publicDir: 'public',
-  base: '/intermediate_submission_2/',
+  base: '/intermediate2/',
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src'),
