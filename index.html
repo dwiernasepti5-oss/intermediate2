@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MStory - PWA Submission 2</title>
+
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="icon" href="./images/favicon.png" />
+  <meta name="theme-color" content="#f58fb5">
+
+  <link rel="stylesheet" href="./src/styles/styles.css" />
+  <script type="module" src="./src/scripts/index.js"></script>
+
+</head>
+
+<body>
+  <a href="#mainContent" class="skip-link">Langsung ke konten utama</a>
+
+  <header role="banner" class="main-header">
+  <div class="container">
+    <a class="brand-name" href="#/">MStory</a>
+
+    <button id="drawer-button" class="drawer-button" aria-label="Buka navigasi" aria-expanded="false">☰</button>
+
+    <nav id="navigation-drawer" aria-label="Navigasi utama">
+      <ul id="nav-list" class="nav-list">
+          <li><a href="#/">Beranda</a></li>
+          <li><a href="#/add-story">Tambah Story</a></li>
+          <li><a href="#/favorite">Favorit</a></li>
+          <li><a href="#/login" id="login-link">Login</a></li>
+          <li><a href="#/register" id="register-link">Daftar</a></li>
+          <li id="user-info" style="display:none;"></li>
+          <li id="logout-item" style="display:none;">
+            <button id="logout-btn" class="logout-btn">Logout</button>
+          </li>
+        <li>
+          <label for="pushToggle" style="display:flex;align-items:center;gap:6px;">
+            <input type="checkbox" id="pushToggle"> Notifikasi
+          </label>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  </header>
+
+
+  <main id="mainContent" tabindex="-1" role="main" aria-live="polite" class="container"></main>
+
+  <button
+    id="installAppBtn"
+    style="
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #f58fb5;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 12px 18px;
+      font-size: 16px;
+      font-weight: 600;
+      box-shadow: 0 4px 12px rgba(245, 143, 181, 0.25);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      z-index: 2000;
+      display: none;
+    "
+  >
+    📲 Install App
+  </button>
+
+  <footer role="contentinfo" class="main-footer">
+    <p>&copy; <span id="year"></span> Dwi Erna Septi Utami — Submission Kedua (PWA & Push)</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
